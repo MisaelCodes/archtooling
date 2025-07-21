@@ -25,6 +25,8 @@ echo "Create or edit the hyprpaper.conf for preload and wallpaper images!"
 sudo pacman -S sway # another lightweight wallpaper engine
 sudo pacman -S swww # another wallpaper engine
 
+# system themes
+sudo pacman -S nwg-look
 
 # Bluetooth
 sudo pacman -S bluez
