@@ -66,3 +66,9 @@ echo "Remember to add the theme powerlevel10k/powerlevel10k and the plugins zsh-
 # VNC
 sudo pacman -S remmina
 sudo pacman -S gtk-vnc gtk-vnc-docs
+
+# SDDM utils
+sudo pacman -S --needed qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
+
+# RGB control
+yay -S openrgb  
