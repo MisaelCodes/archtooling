@@ -13,17 +13,23 @@ echo "Remember to set the default audio device"
 # Hyperland Utils
 sudo pacman -S gtk3 gtk-layer-shell pango gdk-pixbuf2 libdbusmenu-gtk3 cairo glib2 gcc-libs glibc
 sudo pacman -S dunst libnotify
-sudo pacman -S xdg-desktop-portal-hyprland
 sudo pacman -S qt5-wayland qt6-wayland
-sudo pacman -S ttf-nerd-fonts-symbols
 sudo pacman -S hyprpolkitagent
-sudo pacman -S waybar
+
+# Hyperland desktop
+sudo pacman -S xdg-desktop-portal
+sudo pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S xdg-desktop-portal-gtk # to have access to the org.freedesktop.Settings interface
 
 # Hyperland Wallpaper
 sudo pacman -S hyprpaper
 echo "Create or edit the hyprpaper.conf for preload and wallpaper images!"
 sudo pacman -S sway # another lightweight wallpaper engine
 sudo pacman -S swww # another wallpaper engine
+
+# Waybar
+sudo usermod -aG input $USER
+sudo pacman -S waybar
 
 # system themes
 sudo pacman -S nwg-look
@@ -72,3 +78,4 @@ sudo pacman -S --needed qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 
 # RGB control
 yay -S openrgb  
+
